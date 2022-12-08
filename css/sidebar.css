@@ -1,0 +1,17 @@
+.navigation {
+    background-color: gray;
+    /* border: 1px solid black; */
+    border-top: 2px solid lightgray;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid rgb(73, 73, 73);
+    border-bottom: 2px solid rgb(73, 73, 73);
+    position: fixed;
+    width: 100px;
+    height: 300px;
+}
+.navigation ul {
+    list-style-type: none;
+  }
+.navigation a {
+text-decoration: none;
+}

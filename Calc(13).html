@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="calc">
+        calculator
+        <br><br>
+    <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get" target="_blank" >
+		<input type="number" id="a" placeholder="a" name="a" value=""> x<sup>2</sup> + 
+		<input type="number" id="b" placeholder="b" name="b" value=""> x + 
+		<input type="number" id="c" placeholder="c" name="c" value=""> = 0
+		<br><br>
+
+        <input type="button" onclick="prog();" id="send" value="check" >
+        <input type="submit"  name="submit" value="send">
+	</form>
+	<div id="otvet">
+		<h2>result:</h2>
+		<pre id="result"></pre>
+	</div>
+    </div>
+    
+    <div class="calc">feedback <br><br>
+        <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get" target="_blank">
+            <input style="width: 150px;" type="text" name="Name" placeholder="First Name" id="">
+            <br><br>
+            <input style="width: 150px;" type="text" name="SecondName" placeholder="Last Name" id=""><br><br>
+            <input style="width: 150px;" type="email" name="Email" placeholder="Email" id=""><br><br>
+            <input style="width: 150px;" class="form-item" type="tel" name="Phone" placeholder="Phone" id=""><br><br>
+            <textarea type="text" name="Message" placeholder="Message"
+            maxlength="250" id=""></textarea><br><br>
+
+        <input type="submit"  name="submit" value="send">
+
+        </form>
+    </div>
+    <div class="calc">some troubles? <br><br>
+        <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get" target="_blank">
+
+            <input class="form-item" type="text" name="Name" placeholder="Name" id="">
+            <input class="form-item" type="text" name="Phone" placeholder="Phone" id="">
+            <br><br>
+
+            <select class="form" name="form">
+            <option value="">What's happening?</option>
+            <option value="notworking">The site is not working</option>
+            <option value="check">nah fine it's just a check</option>
+        </select> 
+
+        <br><br>
+        
+        <textarea type="text" name="Problem"
+        placeholder="What Happened?" maxlength="300" id=""></textarea>
+
+        <br><br>
+
+        <input style="width: 115px;"  type="file" name="photo" multiple accept="#"> <br><br>
+
+        <input type="submit"  name="submit" value="send">
+
+        </form>
+    </div>
+    <script src="js/calc(13).js"></script>
+</body>
+</html>
