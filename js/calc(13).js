@@ -14,13 +14,13 @@ function quad(a,b,c) {
     var D = b * b - 4 * a * c;
     var x1, x2;
     if ( D > 0 ) {
-        x1 =(-b + Math.sqrt(D))/(2*a);
-        x1 =(-b - Math.sqrt(D))/(2*a);
-        return "coefficients: a=" +a+", b="+b+", c="+c+"\nthe roots of the equation: X1=" + x1 + ", X2= " + x2 + "\ndiscriminant D=" + D;
+		x1 = (-b + Math.sqrt(D)) / (2 * a);
+		x2 = (-b - Math.sqrt(D)) / (2 * a);
+        return "coefficients: a=" +a+", b="+b+", c="+c+"\ndiscriminant D="+D+"\nthe roots of the equation: X1=" + x1 + ", X2= " + x2;
     } else if(D==0) {
         x1=-b/(2*a);
-        return "coefficients: a="+a+", b="+b+", c="+c+"\nthe roots of the equation: X1=" + x1 + ", X2= " + x2 + "\ndiscriminant D=" + D;
+        return "coefficients: a=" +a+", b="+b+", c="+c+"\ndiscriminant D="+D+"\nthe roots of the equation: X1=" + x1 + ", X2= " + x2;
     } else if (D<0) {
-        return "coefficients: a="+a+", b="+b+", c="+c+"\nthere are no roots! \ndiscriminant D=" + D;
+        return "coefficients: a=" +a+", b="+b+", c="+c+"\ndiscriminant D="+D+"\nthere are no roots!";
     }
 }
